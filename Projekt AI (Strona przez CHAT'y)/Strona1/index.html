@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarządzanie finansami</title>
+    <link rel="stylesheet" href="style.css"> <!-- Dodanie połączenia z plikiem CSS -->
+</head>
+<body>
+    <div class="container"> <!-- Dodanie kontenera do stylizacji -->
+        <h1>Zarządzanie finansami</h1>
+
+        <h2>Przelewy/opłaty cykliczne</h2>
+        <ul id="cykliczne">
+            <!-- Tutaj zostaną wyświetlone przelewy/opłaty cykliczne -->
+        </ul>
+
+        <h2>Przelewy/opłaty pojedyncze</h2>
+        <ul id="pojedyncze">
+            <!-- Tutaj zostaną wyświetlone przelewy/opłaty pojedyncze -->
+        </ul>
+
+        <h2>Dodaj nowy przelew/opłatę</h2>
+        <form id="formularz">
+            <label for="nazwa">Nazwa:</label>
+            <input type="text" id="nazwa" name="nazwa" required><br><br>
+            <label for="kwota">Kwota:</label>
+            <input type="number" id="kwota" name="kwota" required><br><br>
+            <label for="data">Data (RRRR-MM-DD):</label>
+            <input type="text" id="data" name="data" required><br><br>
+            <label for="cykliczny">Cykliczny:</label>
+            <input type="checkbox" id="cykliczny" name="cykliczny"><br><br>
+            <input type="submit" value="Dodaj">
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Dodanie połączenia z plikiem JavaScript -->
+</body>
+</html>
